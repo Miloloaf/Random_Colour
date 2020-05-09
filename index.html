@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script type ="text/javascript">
+
+  const colours = ["red","green", "blue", "purple", "yellow", "pink", "orange" ]
+  function nextColour() {
+    let random = Math.floor(Math.random() * colours.length)
+    document.body.style.backgroundColor = colours[random];
+  }
+
+</script>
+
+
+<style>
+
+  html{
+    height: 100%;
+  }
+
+  body{
+    background-color: black;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+  }
+
+  .container_items{
+    color: white;
+    background-color: black;
+  }
+
+  .button{
+    border: 20px;
+  }
+
+</style>
+
+<body>
+
+  <div class="container" id="box">
+    <button onclick="nextColour()" class="btn btn-outline-light">CLICK ME</button>
+  </div>
+
+</body>
+
